@@ -1,0 +1,7 @@
+<div class="container">
+    <h1>Details</h1>
+    <%= @task.details %>
+    <%= @task.completed %>
+    <%= link_to "Edit this task", edit_path(id: @task.id) %>
+    <%= link_to "Delete", task_path(id: @task.id), method: :delete %>
+</div>
